@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router,Route } from 'react-router-dom';
 import Signup from './Pages/Signup'
+import Login from './Pages/Login'
 import './App.css';
 
 /**
@@ -12,15 +13,17 @@ function App() {
   return (
     <div>
     <Router>
+
       <Route  exact path='/'>
-
       <Home />
-
       </Route>
-      <Route  exact path='/Signup'>
 
+      <Route   path='/Signup'>
         <Signup />
+      </Route>
 
+      <Route   path='/Login'>
+        <Login />
       </Route>
     </Router>
     </div>
